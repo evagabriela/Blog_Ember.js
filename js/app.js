@@ -49,13 +49,13 @@ var posts = [{
   title: "Ruby on Rails",
   author: {name: "Hartl"},
   date: new Date('12-25-13'),
-  excerpt: "There is a lot of good tutorials but this one was really good for rails"
+  excerpt: "There is a lot of good tutorials but this one was really good for rails",
   body: "I wanted to share about the most impactful tutorials and this one was the one"
 }, {
    id: '2',
   title: "Javascript the Good Parts",
   author: {name: "Crowford"},
   date: new Date('1-25-14'),
-  excerpt: "There is a lot of good tutorials but this one was really good for rails"
+  excerpt: "There is a lot of good tutorials but this one was really good for rails",
   body: "I wanted to share about the most impactful tutorials and this one was the one"
 }];
