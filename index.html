@@ -13,17 +13,50 @@
       <div class = "navbar-inner">
         <a class ="brand" href ="#"> Blog</a>
         <ul class = "nav">
-          <li><a href = "#"> Post </a></li>
-          <li><a href = "#"> About </a></li>
+          <li>{{#link-to 'posts'}}Posts{{/link-to}}</li>
+          <li>{{#link-to 'about'}}About{{/link-to}}</li>
         </ul>
+      </div>
+    </div>
+
+    {{outlet}}
+  </script>
+
+   <script type="text/x-handlebars" id="about">
+    <div class="about">
+      <p> Hi, My name is Eva Gabriela but everyone calls me Gaby</p>
+    </div>
+    <div class ="about">
+      <p> This is my first Ember.js app and I built it so I can practice and learn more about it</p>
+    </div>
+  </script>
+
+ <script type="text/x-handlebars" id="posts">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <table class="table">
+            <thead>
+              <tr><th> Recent Posts </th></tr>
+            </thead>
+            <tr><td>
+              <a href="#"> Title <small class="muted"> by Author</small></a>
+            </td></tr>
+          </table>
+        </div>
+        <div class ="span9">
+        </div>
       </div>
     </div>
   </script>
 
 
+
+
   <script src="js/libs/jquery-1.10.2.js"></script>
   <script src="js/libs/handlebars-1.1.2.js"></script>
   <script src="js/libs/ember-1.3.1.js"></script>
+  <script src="js/libs/ember-data.js"></script>  
   <script src="js/libs/showdown.js"></script>
   <script src="js/libs/moment.js"></script>
   <script src="js/app.js"></script>
